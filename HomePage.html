@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+     <!-- navbar code-->
+    <nav class="navbarContainer">
+        <div class="logo">Electronics</div>
+        <div class="menu-items">
+            <a href="./HomePage.html">Home</a>
+            <div class="dropdown">
+                <span>Categories</span>
+                <div class="dropdown-content">
+                    <a onClick="searchCategory('mobile')">Mobiles</a>
+                    <a onClick="searchCategory('laptop')">Laptops</a>
+                    <a onClick="searchCategory('watch')">Watches</a>
+                </div>
+            </div>
+            <a href="">About</a>
+        </div>
+
+        <!-- Search Box -->
+        <div class="searchBox">
+            <input type="search" id="search" placeholder="search a product ......" onkeyup="searchFilter()">
+        </div>
+
+        <!-- Right Section -->
+        <div class="nav-right">
+            <img src="" alt="Profile" id="ProfileImage">
+            <a href="./Wishlist.html">Wishlist ❤️</a>
+            <a href="./cart.html">Cart 🛒</a>
+        </div>
+    </nav>
+
+    <!-- 1st container -->
+    <section class="firstContainer">
+        <aside class="container-content">
+            <h1>Big Billion Days🔥</h1>
+            <p>Flat Upto 50% Off on all Electronics</p>
+            <button>Shop Now</button>
+        </aside>
+    </section>
+
+    <!-- 2nd container -->
+    <section class="category">
+        <aside class="cat" onClick="searchCategory('all')">All</aside>
+        <aside class="cat" onClick="searchCategory('mobile')">Mobiles</aside>
+        <aside class="cat" onClick="searchCategory('laptop')">Laptops</aside>
+        <aside class="cat" onClick="searchCategory('watch')">Watches</aside>
+    </section>
+
+    <!-- 3rd container -->
+    <section class="features">
+        <aside>24/7 Support</aside>
+        <aside>Free Delivery</aside>
+        <aside>Cashback</aside>
+        <aside>EMI Options</aside>
+    </section>
+
+    <!-- ✅ 4th container (PRODUCTS - REQUIRED) -->
+
+    <section id="product-container">
+
+    </section>
+
+</body>
+<script src="./script/homePage.js"></script>
+
+</html>
